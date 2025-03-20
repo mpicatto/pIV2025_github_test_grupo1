@@ -1,9 +1,10 @@
-import React from "react";
-import ReactDom from "react-dom/client";
+import React from 'react';
+import ReactDom from 'react-dom/client';
 
-import Describir from "./Describir";
+import Describir from './Describir';
 
-const root = ReactDom.createRoot(document.getElementById('root'));
+const rootElement = ReactDom.createRoot(document.getElementById('root'));
+const root = ReactDom.createRoot(rootElement);
 
 root.render(
     <Describir/>

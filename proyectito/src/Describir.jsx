@@ -1,26 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 
-function Describir() {
-  const [nombre, setNombre] = useState('');
+function Describir(){
+  const [nombre, setNombre] = useState("");
+  const [resultado, setResultado] = useState("");
 
-  const manejarCambio = (event) => {
+  const handleChange = (event) => {
     setNombre(event.target.value);
-  }; 
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setResultado(`${nombre} es un (adjetivo)`)
+    setNombre("");
+  };
 
   return(
     <div>
       <h1>Ingrese un nombre</h1>
-      <input 
-        type="text" 
-        value = {nombre} 
-        onChange = {manejarCambio} 
-      />
-      <p>{nombre} es un/a (adjetivo)</p>
-      <button type='submit'>Enviar</button>
-    </div>
-    
+      <form onSubmit={handleSubmit}>
+        <label>
+          <input type="text" value={nombre} onChange={handleChange}/>
+        </label>
+        <button type="submit">Enviar</button>
+      </form>
 
+      {}
+      {resultado && <p>{resultado}</p>}
+    </div>
   );
 
 }
