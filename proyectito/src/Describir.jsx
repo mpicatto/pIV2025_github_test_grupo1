@@ -11,9 +11,24 @@ function Describir(){
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setResultado(`${nombre} es un (adjetivo)`)
+    
+    const indiceAleatorio = Math.floor(Math.random() * adjetivos.length);
+    const adjetivoAleatorio = adjetivos[indiceAleatorio];
+
+    setResultado(`${nombre} es un ${adjetivoAleatorio}`);
     setNombre("");
   };
+  
+  const adjetivos = [
+    "putito/a", 
+    "maricon/a", 
+    "sucia/o", 
+    "putita/o", 
+    "gay", 
+    "lesbiana", 
+    "nerdazo/a", 
+    "ñoño/a", 
+  ];
 
   return(
     <div>

@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+La idea principal en este proyecto fue crear un randomizador de adjetivos al poner el nombre de cualquiera del grupo.
+Fue creado por 7 personas dividiendose el proyecto entre las funciones y el css, subiendo las ramas a github y con un pull traer lo que los otros enviaban.
+Lo principal de todo esto fue conocer los comandos de github y lo que viene de la mano con eso
+
